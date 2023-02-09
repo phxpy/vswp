@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-save.ru</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <main class="main main-auth">
+        <form class="auth__form" action="#" method="post">
+            <h1 class="auth__heading">Авторизация / Регистрация</h1>
+            <div class="auth__input-box">
+                <label class="auth__input-label" for="auth-input">Введите Ваш номер телефона</label>
+                <input class="auth__input" id="auth-input" type="tel" name="phone-number" placeholder="+7(XXX)-XXX-XX-XX">
+            </div>
+            <button class="btn form__submit-btn" type="submit">Продолжить</button>
+        </form>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">Вводя номер телефона на сайте, нажимая кнопку «Продолжить» и вводя код из SMS далее нажимая кнопку «Подключить» инициируется запрос Сервиса соответствующего Оператора, позволяющего совершить оплату услуги. Каждый день со счета моего мобильного
+                    телефона будет списываться стоимость доступа пока действует подписка. В любой момент подписку можно отключить в личном кабинете. Стоимость доступа составляет 30 рублей (все налоги и комиссии включены) в сутки для абонентов Tele2. Для
+                    отключения подписки абонентам Теле2, необходимо отправить SMS сообщение с кодом СТОП на номер 1595. Стоимость доступа составляет 30 рублей (все налоги и комиссии включены) в сутки для абонентов ПАО «МегаФон». Для отключения подписки
+                    абонентам ПАО «МегаФон» необходимо отправить SMS сообщение с кодом СТОП SV на номер 7522. Вводя телефон на сайте, пользователь принимает условия оферт: РНКО «Единая Касса», МегаФон, Теле2, Банк Элексир, Договор - публичная оферта.
+                    Нажимая кнопку «Получить код», Вы даете согласие на получение фискального чека на эл. почту: "ваш номер телефона@video-save.ru " и отказываетесь от SMS уведомлений. Чтобы изменить адрес эл. почты, отправьте запрос с адресом на support@video-save.ru.
+                    Служба поддержки: support@video-save.ru.</p>
+                <div class="footer__links"><a class="footer__link" href="#">Политика конфиденциальности</a><a class="footer__link" href="#">Оферта</a><a class="footer__link" href="#">Связаться с нами</a>
+                </div>
+                <p class="footer__copyright">Copyright &copy; 2023, All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/inputmask.min.js"></script>
+    <script>
+        var phoneInput = document.getElementById("auth-input")
+        var im = new Inputmask("+7(999)-999-99-99")
+        im.mask(phoneInput)
+    </script>
+</body>
+
+</html>
